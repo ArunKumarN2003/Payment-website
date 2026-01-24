@@ -1,21 +1,23 @@
+
 * {
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
 
+html,
 body {
-  background: #f4f6fb;
+  width: 100%;
   margin: 0;
-  padding: 40px;
+  overflow-x: hidden;
+  background: #f4f6fb;
 }
 
 .container {
   display: flex;
   width: 100%;
-  min-height: 100vh;      
+  min-height: 100vh;
+  padding: 40px;
   background: #faf5f5;
-  border-radius: 0;       
-  overflow: hidden;
   box-shadow: 0 20px 40px rgba(36, 18, 18, 0.1);
 }
 
@@ -39,19 +41,20 @@ body {
 .plan {
   display: flex;
   align-items: center;
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 20px;
 }
-.plan p{
-     padding: 15px;
+
+.plan p {
+  padding: 10px;
 }
 
 .icon {
   width: 40px;
   height: 40px;
-  background: #000;      
+  background: #000;
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -60,7 +63,7 @@ body {
 
 .icon img {
   width: 30px;
-  height: px;
+  height: 30px;
   object-fit: contain;
 }
 
@@ -69,7 +72,7 @@ body {
 }
 
 .promo {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   border: none;
   color: #fff;
   padding: 10px;
@@ -92,9 +95,8 @@ body {
   font-weight: bold;
 }
 
-
 .right {
-  width: 100%;
+  width: 50%;
   padding: 40px;
 }
 
@@ -116,7 +118,7 @@ h2 {
   cursor: pointer;
 }
 
-.option:active{
+.option:active {
   border-color: #2f80ff;
 }
 
@@ -136,23 +138,24 @@ h2 {
 }
 
 .methods button {
-  padding: 10px 15px;
+  padding: 10px;
   border: 1px solid #ddd;
   background: #fff;
   border-radius: 6px;
   cursor: pointer;
-  gap: 8px;
 }
-.methods button img{
-    height:  24px;
-    width: auto;
+
+.methods button img {
+  height: 24px;
+  width: auto;
 }
 
 .methods button:active {
   border-color: #2f80ff;
 }
 
-form input {
+form input,
+select {
   width: 100%;
   padding: 12px;
   margin-bottom: 12px;
@@ -162,18 +165,9 @@ form input {
 
 .row {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
-select {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 12px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  font-size: 14px;
-  background-color: #fff;
-}
-
 
 .subscribe {
   background: #2f80ff;
@@ -184,4 +178,66 @@ select {
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .billing {
+    flex-direction: column;
+  }
+
+  .option {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .left {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .left h1 {
+    font-size: 26px;
+  }
+
+  .plan {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .price {
+    margin-top: 10px;
+  }
+
+  .methods {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .right {
+    padding: 20px;
+  }
+
+  .subscribe {
+    font-size: 14px;
+  }
 }
