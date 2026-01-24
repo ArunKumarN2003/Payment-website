@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6fb;
+  margin: 0;
+  padding: 40px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;      
+  background: #faf5f5;
+  border-radius: 0;       
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(36, 18, 18, 0.1);
+}
+
+
+.left {
+  width: 50%;
+  background: linear-gradient(135deg, #8f00ff, #ff6a3d);
+  color: #fff;
+  padding: 30px;
+}
+
+.left h1 {
+  margin: 20px 0 10px;
+}
+
+.subtext {
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.15);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.plan p{
+     padding: 15px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background: #000;      
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon img {
+  width: 30px;
+  height: px;
+  object-fit: contain;
+}
+
+.price {
+  margin-left: auto;
+}
+
+.promo {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sum {
+  margin-top: 30px;
+}
+
+.sum div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.tot {
+  font-weight: bold;
+}
+
+
+.right {
+  width: 100%;
+  padding: 40px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.billing {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.option {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.option:active{
+  border-color: #2f80ff;
+}
+
+.badge {
+  background: #2ecc71;
+  color: #fff;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-left: 6px;
+}
+
+.methods {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.methods button {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  gap: 8px;
+}
+.methods button img{
+    height:  24px;
+    width: auto;
+}
+
+.methods button:active {
+  border-color: #2f80ff;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.row {
+  display: grid;
+  gap: 10px;
+}
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+
+.subscribe {
+  background: #2f80ff;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}

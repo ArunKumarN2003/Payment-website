@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment UI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+</head>
+<body>
+
+<div class="container">
+  <div class="left">
+    <div class="content">
+      <p class="back">&larr; Upgrade your plan</p>
+      <h1>$2,268.00</h1>
+      <p class="subtext">
+        We will bill you $189.00 monthly + taxes, unless you cancel.
+      </p>
+
+      <div class="plan">
+<div class="icon">
+  <img src="netflixlogo.webp" alt="Plan icon">
+</div>
+
+        <div>
+          <h3>Netflix</h3>
+          <p>4K+HDR resolution, 4 supported devices simultaneously, 6 download devices, includes spatial audio</p>
+        </div>
+        <span class="price">$189.00</span>
+      </div>
+
+      <button class="promo">Add promo code</button>
+
+      <div class="sum">
+        <div>
+          <span>Subtotal</span>
+          <span>$2,268.00</span>
+        </div>
+        <div class="tot">
+          <span>Total due today</span>
+          <span>$189.00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="right">
+    <h2>Billing frequency</h2>
+
+    <div class="billing">
+      <div class="option">
+        <p>Pay monthly</p>
+        <strong>$239/month</strong>
+      </div>
+      <div class="option">
+        <p>Pay yearly</p>
+        <strong>$189/month</strong>
+        <span class="badge">Save 20%</span>
+      </div>
+    </div>
+
+    <h2>Payment method</h2>
+    <div class="methods">
+   <button class="img-btn">
+        <img src="mastercard.png">
+      </button>
+      <button class="img-btn">
+        <img src="logopay.png">
+      </button>
+      <button class ="img-btn">
+        <img src="PhonePe-Logo.png">
+      </button>
+     <button class="img-btn">
+      <img src="Gpay.png" alt="Google Pay">
+   </button>
+
+      
+    </div>
+
+    <h2>Payment information</h2>
+
+    <form>
+       <label> Card number
+      <input type="number" name="card number" placeholder="Card number" />
+      </label>
+      <div class="row">
+        <label>Expiry Date</label>
+        <input type="text" name="year" placeholder="MM/YY" />
+        <label>CVC</label>
+        <input type="text" name="code" placeholder="3-digit Code " />
+     
+        <label>Name on Card</label>
+        <input type="text" name="Name" placeholder="Name on card" />
+        </div>
+        <label>Address</label>
+        <input type="text" name="Address" placeholder="Street address" />
+        <input type="text" name="apartment" placeholder="Apartment, street number, building (optional)" />
+     <div class="row">
+        <input type="text" name="City" placeholder="City" />
+        <input type="text" name="stylesheet" placeholder="State" />
+      </div>
+        <select name="country" required>
+        <option value="">Select country</option>
+        <option value="IN">India</option>
+        <option value="US">United States</option>
+        <option value="UK">United Kingdom</option>
+        <option value="CA">Canada</option>
+        <option value="AU">Australia</option>
+        <option value="OT">Others</option>
+  
+    </select>
+     <button class="subscribe">Subscribe</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
