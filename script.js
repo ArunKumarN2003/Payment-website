@@ -1,4 +1,4 @@
-// Billing selection
+
 const billingOptions = document.querySelectorAll('.billing-option');
 
 billingOptions.forEach(option => {
@@ -7,8 +7,6 @@ billingOptions.forEach(option => {
     option.classList.add('active');
   });
 });
-
-// Payment method selection
 const payMethods = document.querySelectorAll('.pay-method');
 
 payMethods.forEach(method => {
@@ -17,3 +15,4 @@ payMethods.forEach(method => {
     method.classList.add('active');
   });
 });
+
